@@ -22,10 +22,5 @@ body{
 
 .text-blue{
   color: var(--mainBlue);
-
 }
 
-.navbarLogo{
-  width: 40px;
-  height: 60px;
-}
