@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 class CreateComponent extends Component {
 
@@ -36,7 +37,15 @@ class CreateComponent extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        console.log(`The values are ${this.state.product_name}, ${this.state.product_code}, ${this.state.product_price}`);
+        const product_obj = {
+            product_name: this.state.product_name,
+            product_code: this.state.product_code,
+            product_price: this.state.product_price
+        };
+
+        axios.post('http://localhost:4000/product/addProduct', product_obj)
+            .then(res => console.log(res.data));
+
 
         this.setState({
             product_name: '',
