@@ -27,14 +27,14 @@ class IndexComponent extends Component {
 
     render() {
         return (
-            <div>
-                <h3 align="center">Business List</h3>
+            <div className="container" style={{ marginTop: 20 }}>
+                <h3 align="center">Product List</h3>
                 <table className="table table-striped" style={{ marginTop: 20 }}>
                     <thead>
                         <tr>
-                            <th>Person</th>
-                            <th>Business</th>
-                            <th>GST Number</th>
+                            <th>Product</th>
+                            <th>Code</th>
+                            <th>Price</th>
                             <th colSpan="2">Action</th>
                         </tr>
                     </thead>

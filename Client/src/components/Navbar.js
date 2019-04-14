@@ -33,6 +33,7 @@ class Navbar extends Component {
                             Index
                         </Link>
                     </li>
+
                 </ul>
                 </div>
 
@@ -43,7 +44,14 @@ class Navbar extends Component {
                         </span>
                     </ButtonContainer>
                 </Link>
+                <Link to="/signup" className="nav-link">
+                    <ButtonContainer>
+                                <span className="mr-2">
+                                    <i className="fas fa-user"/> Sign up
+                                </span>
+                    </ButtonContainer>
 
+                </Link>
             </NavWarapper>
         );
     }
